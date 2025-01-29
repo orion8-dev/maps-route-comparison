@@ -36,6 +36,8 @@ function performRouteSearch(origin, destination) {
         search_type: 1,
         from: startPoint,
         to: goalPoint,
+        waypoint: '139.70058200790456,35.68985058924021,139.7774129687794,35.71418344492873',
+        waypoint_type: '0,0',
     };
 
     try {
@@ -50,7 +52,7 @@ function performRouteSearch(origin, destination) {
                 showRouteInfo(distance, duration);
 
                 // 各リンクの座標を抽出
-                const coordinates = route.section[0].link.flatMap(link =>
+                const coordinates = route.link.flatMap(link =>
                     link.line.coordinates.map(coord => new ZDC.LatLng(coord[1], coord[0]))
                 );
 
