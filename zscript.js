@@ -31,9 +31,9 @@ function showRouteInfo(distance, duration) {
 function performRouteSearch(origin, destination) {
     const startPoint = `${origin.lng},${origin.lat}`;
     const goalPoint = `${destination.lng},${destination.lat}`;
-    const api = "/route/route_mbn/walk";
+    const api = "/route/route_mbn/drive_tsp";
     const params = {
-        search_type: 4,
+        search_type: 1,
         from: startPoint,
         to: goalPoint,
     };
