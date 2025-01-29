@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     width: 100vw;
     height: 95vh;
-    background-color: grey;
 
 }
 
@@ -18,7 +17,6 @@ h1 {
     width: 80vw;
     height: 75vh;
     margin: auto;
-    border: solid green;
 }
 
 #info {
