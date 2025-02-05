@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -16,19 +16,19 @@
 <body>
     <h1>自動車ルート検索2.0(最適巡回考慮)</h1>
 
-    <div id="ZMap">
-        <div id="info">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-left align-items-center">
-                    時間 ➡
-                    <span class="badge text-bg-primary rounded-pill" id="time"></span>
-                </li>
-                <li class="list-group-item d-flex justify-content-left align-items-center">
-                    距離 ➡
-                    <span class="badge text-bg-primary rounded-pill" id="dist"></span>
-                </li>
-            </ul>
-        </div>
+
+    <div id="info">
+        <div id="ZMap"></div>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                所要時間 ➡
+                <span class="badge text-bg-primary rounded-pill" id="time"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                距離 ➡
+                <span class="badge text-bg-primary rounded-pill" id="dist"></span>
+            </li>
+        </ul>
     </div>
 
     <script src="zscript.js"></script>
