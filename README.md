@@ -255,13 +255,13 @@ function performRouteSearch(origin, destination, waypointString) {
 
 #### レスポンス結果（自動車ルート検索 2.0(最適巡回考慮)）
 
-![Zenrin Maps API レスポンス結果](imgRef\response.png "レスポンス結果")
+![Zenrin Maps API レスポンス結果](https://github.com/orion8-dev/maps-route-comparison/blob/main/imgRef/response.png "レスポンス結果")
 
 #### 地図上ルート描画
 
 - #### 地図描画[参照サイト](https://orion8-dev.github.io/maps-route-comparison/zmap.html "GitHub hosting link")
 
-<br>![ルート描画](https://github.com/orion8-dev/maps-route-comparison/blob/main/imgRef/response.png "ルート描画")
+<br>![ルート描画](https://github.com/orion8-dev/maps-route-comparison/blob/main/imgRef/route.png "ルート描画")
 
 ## 5. 主要な関数の詳細
 
@@ -294,7 +294,7 @@ function performRouteSearch(origin, destination, waypointString) {
 ### 5.2 Zenrin Maps API（route_mbn/drive_tsp）
 
 - `map.requestAPI()`: Zenrin の WebAPI を利用できます。GET リクエストのみ対応しており、ルート検索 API へリクエストを送信します。<br>
-  ![Zenrin Maps JavaScript API](https://github.com/orion8-dev/maps-route-comparison/blob/main/imgRef\requestAPI.png "requesAPI レファレンス")
+  ![Zenrin Maps JavaScript API](https://github.com/orion8-dev/maps-route-comparison/blob/main/imgRef/requestAPI.png "requesAPI レファレンス")
 - `route_mbn/drive_tsp`: 最適巡回ルートの計算を実施します。
 - `waypoint`: 経由地を指定し、巡回ルートの最適化を実現します。
 
